@@ -6,5 +6,5 @@ token_symbol = "UZU"
 
 
 def main():
-    account = accounts[0]
+    account = accounts.add(config["wallets"]["from_key"])
     erc20 = UzumakiToken.deploy(initial_supply, {"from": account})
