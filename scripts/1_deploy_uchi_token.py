@@ -6,4 +6,4 @@ token_symbol = "UCHI"
 
 def main():
     account = accounts.add(config["wallets"]["from_key"])
-    erc20 = UchihaToken.deploy({"from": account})
+    erc20 = UchihaToken.deploy(initial_supply, {"from": account})
